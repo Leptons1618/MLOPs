@@ -55,7 +55,7 @@ docker login
 ```bash
 docker tag your-image-name your-docker-hub-username/your-image-name
 ```
-4. Push the image to Docker Hub:
+3. Push the image to Docker Hub:
 ```bash
 docker push your-docker-hub-username/your-image-name
 ```
