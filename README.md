@@ -34,14 +34,14 @@ The Dockerfile specifies the base image, sets the working directory, copies your
 ### Building the Docker Image
 To build the Docker image, execute the following command in your project directory where the Dockerfile is located:
 ```bash
-docker build -t your-image-name .
+docker build -t lept0n5/mlops:1.0 .
 ```
 Replace your-image-name with the desired name for your Docker image.
 
 ### Running the Docker Container
 Once the Docker image is built, you can run the container with the following command:
 ```bash
-docker run your-image-name
+docker run lept0n5/mlops:1.0
 ```
 
 ### Pushing the Docker Image to a Registry
@@ -53,10 +53,10 @@ docker login
 ```
 2. Tag your image with your Docker Hub username and image name:
 ```bash
-docker tag your-image-name your-docker-hub-username/your-image-name
+docker tag lept0n5/mlops:1.0 lept0n5/mlops:1.0
 ```
 3. Push the image to Docker Hub:
 ```bash
-docker push your-docker-hub-username/your-image-name
+docker push lept0n5/mlops:1.0 lept0n5/mlops:1.0
 ```
 Now your Docker image is available on Docker Hub for deployment.
