@@ -6,9 +6,10 @@ WORKDIR /app
 
 # Copy your Python script and dataset into the container
 COPY train_model.py .
+COPY test_model.py .
 
 # Install Python dependencies
-RUN pip install scikit-learn pandas
+RUN pip install scikit-learn pandas np
 
 # Command to run your Python script
 CMD ["python", "train_model.py"]
