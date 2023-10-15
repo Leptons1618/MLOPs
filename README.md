@@ -21,7 +21,6 @@ WORKDIR /app
 
 # Copy your Python script and dataset into the container
 COPY train_model.py .
-COPY your_dataset.csv .
 
 # Install Python dependencies
 RUN pip install scikit-learn pandas
