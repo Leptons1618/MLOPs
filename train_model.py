@@ -2,15 +2,14 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
+from sklearn.datasets import load_iris
 
-# Load your dataset
-data = pd.read_csv('your_dataset.csv')
-
-# Data preprocessing and feature engineering
+# Load the Iris dataset
+data = load_iris()
+X = data.data  # Features (sepal length, sepal width, petal length, and petal width)
+y = data.target  # Target labels (0 for setosa, 1 for versicolor, 2 for virginica)
 
 # Split data into training and testing sets
-X = data.drop('target', axis=1)
-y = data['target']
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 # Initialize and train the model
