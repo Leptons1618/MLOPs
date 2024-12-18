@@ -1,0 +1,26 @@
+
+# Ignore virtual environment directories
+env/
+.mlops/
+
+# Ignore Python bytecode files
+__pycache__/
+*.py[cod]
+
+# Ignore logs
+*.log
+
+# Ignore model files
+*.joblib
+
+# Ignore data files
+*.csv
+*.h5
+
+# Ignore IDE-specific files
+.idea/
+.vscode/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db

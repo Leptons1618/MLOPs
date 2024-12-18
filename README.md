@@ -1,5 +1,20 @@
 # Project Name - Machine Learning MLOps Pipeline
 
+## New Features
+
+- **Hyperparameter Tuning**: The model now uses `GridSearchCV` for hyperparameter tuning.
+- **Data Preprocessing**: Implemented `StandardScaler` for feature scaling.
+- **Model Persistence**: Models can be saved and loaded using `joblib`.
+- **Command-line Arguments**: Use `argparse` for flexible script execution.
+- **Logging**: Leveraging Python's `logging` module for better traceability.
+- **REST API**: Serve the model using Flask for real-time predictions.
+
+## Instructions
+
+### Training the Model
+
+To train the model with the new features:
+
 ## Docker Containerization
 
 This section explains how to containerize your machine learning model and its dependencies using Docker.
